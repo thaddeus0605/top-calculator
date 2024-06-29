@@ -24,12 +24,14 @@ let result = 0;
 
 const operate = (num1, num2, operator) => {
     if (operator === "+") {
-        return add(num1, num2)
+        result = add(num1, num2)
     } else if (operator === "-") {
-       return subtract(num1, num2);
+       result = subtract(num1, num2);
     } else if (operator === "*") {
-        return multiply(num1, num2)
+        result = multiply(num1, num2)
     } else if (operator === "/") {
-        return divide(num1, num2)
+        result = divide(num1, num2)
     }
+
+    return result;
 }
